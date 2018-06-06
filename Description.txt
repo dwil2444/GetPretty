@@ -1,0 +1,6 @@
+X, the point of this App is to help people find a suitable barbershop or salon nearby based on their hair-type.
+
+1. We can use the services that Microsoft gave us on Azure. (eg. Bing Entity Search)
+2. For now, I need help figuring out how to make HTTPRequests in Swift since thats all we really need for this app.
+3. Apple always wants their stuff to look attractive so we'll probably spend most of our time developing the ui.
+4. Log in with your githubID so recruiters can see you were a collaborator on the project/
