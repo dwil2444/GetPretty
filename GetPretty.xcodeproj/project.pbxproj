@@ -12,8 +12,6 @@
 		15D1A53020BA22A200884A1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15D1A52E20BA22A200884A1B /* Main.storyboard */; };
 		15D1A53220BA22A300884A1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15D1A53120BA22A300884A1B /* Assets.xcassets */; };
 		15D1A53520BA22A300884A1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15D1A53320BA22A300884A1B /* LaunchScreen.storyboard */; };
-		15D1A54020BA22A300884A1B /* Hello_WorldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D1A53F20BA22A300884A1B /* Hello_WorldTests.swift */; };
-		15D1A54B20BA22A300884A1B /* Hello_WorldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D1A54A20BA22A300884A1B /* Hello_WorldUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -22,31 +20,27 @@
 			containerPortal = 15D1A51F20BA22A100884A1B /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 15D1A52620BA22A100884A1B;
-			remoteInfo = "Hello-World";
+			remoteInfo = GetPretty;
 		};
 		15D1A54720BA22A300884A1B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 15D1A51F20BA22A100884A1B /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 15D1A52620BA22A100884A1B;
-			remoteInfo = "Hello-World";
+			remoteInfo = GetPretty;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		15D1A52720BA22A100884A1B /* Hello-World.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hello-World.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		15D1A52720BA22A100884A1B /* GetPretty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = GetPretty.app; path = "/Users/danewilliamson/Desktop/Repos/Hello-World/build/Debug-iphoneos/GetPretty.app"; sourceTree = "<absolute>"; };
 		15D1A52A20BA22A200884A1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		15D1A52C20BA22A200884A1B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		15D1A52F20BA22A200884A1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		15D1A53120BA22A300884A1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		15D1A53420BA22A300884A1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		15D1A53620BA22A300884A1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		15D1A53B20BA22A300884A1B /* Hello-WorldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hello-WorldTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		15D1A53F20BA22A300884A1B /* Hello_WorldTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hello_WorldTests.swift; sourceTree = "<group>"; };
-		15D1A54120BA22A300884A1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		15D1A54620BA22A300884A1B /* Hello-WorldUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hello-WorldUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		15D1A54A20BA22A300884A1B /* Hello_WorldUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hello_WorldUITests.swift; sourceTree = "<group>"; };
-		15D1A54C20BA22A300884A1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15D1A53B20BA22A300884A1B /* GetPrettyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = GetPrettyTests.xctest; path = "/Users/danewilliamson/Desktop/Repos/Hello-World/build/Debug-iphoneos/GetPrettyTests.xctest"; sourceTree = "<absolute>"; };
+		15D1A54620BA22A300884A1B /* GetPrettyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = GetPrettyUITests.xctest; path = "/Users/danewilliamson/Desktop/Repos/Hello-World/build/Debug-iphoneos/GetPrettyUITests.xctest"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,24 +71,11 @@
 		15D1A51E20BA22A100884A1B = {
 			isa = PBXGroup;
 			children = (
-				15D1A52920BA22A100884A1B /* Hello-World */,
-				15D1A53E20BA22A300884A1B /* Hello-WorldTests */,
-				15D1A54920BA22A300884A1B /* Hello-WorldUITests */,
-				15D1A52820BA22A100884A1B /* Products */,
+				15D1A52920BA22A100884A1B /* GetPretty */,
 			);
 			sourceTree = "<group>";
 		};
-		15D1A52820BA22A100884A1B /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				15D1A52720BA22A100884A1B /* Hello-World.app */,
-				15D1A53B20BA22A300884A1B /* Hello-WorldTests.xctest */,
-				15D1A54620BA22A300884A1B /* Hello-WorldUITests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		15D1A52920BA22A100884A1B /* Hello-World */ = {
+		15D1A52920BA22A100884A1B /* GetPretty */ = {
 			isa = PBXGroup;
 			children = (
 				15D1A52A20BA22A200884A1B /* AppDelegate.swift */,
@@ -104,33 +85,15 @@
 				15D1A53320BA22A300884A1B /* LaunchScreen.storyboard */,
 				15D1A53620BA22A300884A1B /* Info.plist */,
 			);
-			path = "Hello-World";
-			sourceTree = "<group>";
-		};
-		15D1A53E20BA22A300884A1B /* Hello-WorldTests */ = {
-			isa = PBXGroup;
-			children = (
-				15D1A53F20BA22A300884A1B /* Hello_WorldTests.swift */,
-				15D1A54120BA22A300884A1B /* Info.plist */,
-			);
-			path = "Hello-WorldTests";
-			sourceTree = "<group>";
-		};
-		15D1A54920BA22A300884A1B /* Hello-WorldUITests */ = {
-			isa = PBXGroup;
-			children = (
-				15D1A54A20BA22A300884A1B /* Hello_WorldUITests.swift */,
-				15D1A54C20BA22A300884A1B /* Info.plist */,
-			);
-			path = "Hello-WorldUITests";
+			path = GetPretty;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		15D1A52620BA22A100884A1B /* Hello-World */ = {
+		15D1A52620BA22A100884A1B /* GetPretty */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 15D1A54F20BA22A300884A1B /* Build configuration list for PBXNativeTarget "Hello-World" */;
+			buildConfigurationList = 15D1A54F20BA22A300884A1B /* Build configuration list for PBXNativeTarget "GetPretty" */;
 			buildPhases = (
 				15D1A52320BA22A100884A1B /* Sources */,
 				15D1A52420BA22A100884A1B /* Frameworks */,
@@ -140,14 +103,14 @@
 			);
 			dependencies = (
 			);
-			name = "Hello-World";
-			productName = "Hello-World";
-			productReference = 15D1A52720BA22A100884A1B /* Hello-World.app */;
+			name = GetPretty;
+			productName = GetPretty;
+			productReference = 15D1A52720BA22A100884A1B /* GetPretty.app */;
 			productType = "com.apple.product-type.application";
 		};
-		15D1A53A20BA22A300884A1B /* Hello-WorldTests */ = {
+		15D1A53A20BA22A300884A1B /* GetPrettyTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 15D1A55220BA22A300884A1B /* Build configuration list for PBXNativeTarget "Hello-WorldTests" */;
+			buildConfigurationList = 15D1A55220BA22A300884A1B /* Build configuration list for PBXNativeTarget "GetPrettyTests" */;
 			buildPhases = (
 				15D1A53720BA22A300884A1B /* Sources */,
 				15D1A53820BA22A300884A1B /* Frameworks */,
@@ -158,14 +121,14 @@
 			dependencies = (
 				15D1A53D20BA22A300884A1B /* PBXTargetDependency */,
 			);
-			name = "Hello-WorldTests";
-			productName = "Hello-WorldTests";
-			productReference = 15D1A53B20BA22A300884A1B /* Hello-WorldTests.xctest */;
+			name = GetPrettyTests;
+			productName = GetPrettyTests;
+			productReference = 15D1A53B20BA22A300884A1B /* GetPrettyTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		15D1A54520BA22A300884A1B /* Hello-WorldUITests */ = {
+		15D1A54520BA22A300884A1B /* GetPrettyUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 15D1A55520BA22A300884A1B /* Build configuration list for PBXNativeTarget "Hello-WorldUITests" */;
+			buildConfigurationList = 15D1A55520BA22A300884A1B /* Build configuration list for PBXNativeTarget "GetPrettyUITests" */;
 			buildPhases = (
 				15D1A54220BA22A300884A1B /* Sources */,
 				15D1A54320BA22A300884A1B /* Frameworks */,
@@ -176,9 +139,9 @@
 			dependencies = (
 				15D1A54820BA22A300884A1B /* PBXTargetDependency */,
 			);
-			name = "Hello-WorldUITests";
-			productName = "Hello-WorldUITests";
-			productReference = 15D1A54620BA22A300884A1B /* Hello-WorldUITests.xctest */;
+			name = GetPrettyUITests;
+			productName = GetPrettyUITests;
+			productReference = 15D1A54620BA22A300884A1B /* GetPrettyUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -204,7 +167,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 15D1A52220BA22A100884A1B /* Build configuration list for PBXProject "Hello-World" */;
+			buildConfigurationList = 15D1A52220BA22A100884A1B /* Build configuration list for PBXProject "GetPretty" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -213,13 +176,13 @@
 				Base,
 			);
 			mainGroup = 15D1A51E20BA22A100884A1B;
-			productRefGroup = 15D1A52820BA22A100884A1B /* Products */;
+			productRefGroup = 15D1A51E20BA22A100884A1B;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				15D1A52620BA22A100884A1B /* Hello-World */,
-				15D1A53A20BA22A300884A1B /* Hello-WorldTests */,
-				15D1A54520BA22A300884A1B /* Hello-WorldUITests */,
+				15D1A52620BA22A100884A1B /* GetPretty */,
+				15D1A53A20BA22A300884A1B /* GetPrettyTests */,
+				15D1A54520BA22A300884A1B /* GetPrettyUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -265,7 +228,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15D1A54020BA22A300884A1B /* Hello_WorldTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +235,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15D1A54B20BA22A300884A1B /* Hello_WorldUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,12 +243,12 @@
 /* Begin PBXTargetDependency section */
 		15D1A53D20BA22A300884A1B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 15D1A52620BA22A100884A1B /* Hello-World */;
+			target = 15D1A52620BA22A100884A1B /* GetPretty */;
 			targetProxy = 15D1A53C20BA22A300884A1B /* PBXContainerItemProxy */;
 		};
 		15D1A54820BA22A300884A1B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 15D1A52620BA22A100884A1B /* Hello-World */;
+			target = 15D1A52620BA22A100884A1B /* GetPretty */;
 			targetProxy = 15D1A54720BA22A300884A1B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -431,12 +392,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Hello-World/Info.plist";
+				INFOPLIST_FILE = GetPretty/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.zygium.Hello-World";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zygium.GetPretty;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -448,12 +409,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Hello-World/Info.plist";
+				INFOPLIST_FILE = GetPretty/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.zygium.Hello-World";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zygium.GetPretty;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -466,17 +427,17 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Hello-WorldTests/Info.plist";
+				INFOPLIST_FILE = GetPrettyTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.zygium.Hello-WorldTests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zygium.GetPrettyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hello-World.app/Hello-World";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GetPretty.app/GetPretty";
 			};
 			name = Debug;
 		};
@@ -486,17 +447,17 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Hello-WorldTests/Info.plist";
+				INFOPLIST_FILE = GetPrettyTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.zygium.Hello-WorldTests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zygium.GetPrettyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hello-World.app/Hello-World";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GetPretty.app/GetPretty";
 			};
 			name = Release;
 		};
@@ -505,17 +466,17 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Hello-WorldUITests/Info.plist";
+				INFOPLIST_FILE = GetPrettyUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.zygium.Hello-WorldUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zygium.GetPrettyUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Hello-World";
+				TEST_TARGET_NAME = GetPretty;
 			};
 			name = Debug;
 		};
@@ -524,24 +485,24 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Hello-WorldUITests/Info.plist";
+				INFOPLIST_FILE = GetPrettyUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.zygium.Hello-WorldUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zygium.GetPrettyUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Hello-World";
+				TEST_TARGET_NAME = GetPretty;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		15D1A52220BA22A100884A1B /* Build configuration list for PBXProject "Hello-World" */ = {
+		15D1A52220BA22A100884A1B /* Build configuration list for PBXProject "GetPretty" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				15D1A54D20BA22A300884A1B /* Debug */,
@@ -550,7 +511,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		15D1A54F20BA22A300884A1B /* Build configuration list for PBXNativeTarget "Hello-World" */ = {
+		15D1A54F20BA22A300884A1B /* Build configuration list for PBXNativeTarget "GetPretty" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				15D1A55020BA22A300884A1B /* Debug */,
@@ -559,7 +520,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		15D1A55220BA22A300884A1B /* Build configuration list for PBXNativeTarget "Hello-WorldTests" */ = {
+		15D1A55220BA22A300884A1B /* Build configuration list for PBXNativeTarget "GetPrettyTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				15D1A55320BA22A300884A1B /* Debug */,
@@ -568,7 +529,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		15D1A55520BA22A300884A1B /* Build configuration list for PBXNativeTarget "Hello-WorldUITests" */ = {
+		15D1A55520BA22A300884A1B /* Build configuration list for PBXNativeTarget "GetPrettyUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				15D1A55620BA22A300884A1B /* Debug */,

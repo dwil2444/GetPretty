@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  Hello-World
+//  GetPretty
 //
 //  Created by Dane Williamson on 5/26/18.
 //  Copyright © 2018 zygium. All rights reserved.
