@@ -27,7 +27,7 @@ class ViewController: UIViewController
     func entitySearch()
     {
         //Acquire an API key
-        let subscriptionKey = "BINGKEY"
+        let subscriptionKey = "2e5287c6606e4f348d52340d1f52d1de"
         
         let host = "https://api.cognitive.microsoft.com"
         let path = "/bing/v7.0/entities"
@@ -47,7 +47,12 @@ class ViewController: UIViewController
         
         
         //Set up the HTTP Connection using Alamofire NOT COMPLETE, ATTACH THE API KEY
-        Alamofire.request(url!).responseJSON { response in
+        
+        //Create custom header for authorization
+        let headers: HTTPHeaders = [
+            "Ocp-Apim-Subscription-Key": subscriptionKey
+        ]
+        Alamofire.request(url!, method: .get, headers: headers).responseJSON { response in
             print("Request: \(String(describing: response.request))")   // original url request
             print("Response: \(String(describing: response.response))") // http url response
             print("Result: \(response.result)")                         // response serialization result
