@@ -7,6 +7,10 @@
 //
 
 import UIKit
+import Foundation
+import Alamofire
+
+
 
 class ViewController: UIViewController
 {
@@ -17,6 +21,46 @@ class ViewController: UIViewController
     @IBAction func action(_ sender: UIButton)
     {
         output.text = "Hello, " + (input.text)!
+        entitySearch()
+    }
+    
+    func entitySearch()
+    {
+        //Acquire an API key
+        let subscriptionKey = "BINGKEY"
+        
+        let host = "https://api.cognitive.microsoft.com"
+        let path = "/bing/v7.0/entities"
+        
+        let mkt = "en-us"
+        //var query = "barber shops near me" //query to request from bings entity search
+        
+        //Figure out how out how to URL encode the query string
+        //For now hard code encoding the query by replacing spaces with +'s
+        let encodedQuery = "barber+shops+near+Me"
+        
+        //Append the encoded string to a string of parameters
+        let params  = "?mkt=" + mkt + "&q=" + encodedQuery
+        
+        //Set up the URL
+        let url = URL(string: host+path+params)
+        
+        
+        //Set up the HTTP Connection using Alamofire NOT COMPLETE, ATTACH THE API KEY
+        Alamofire.request(url!).responseJSON { response in
+            print("Request: \(String(describing: response.request))")   // original url request
+            print("Response: \(String(describing: response.response))") // http url response
+            print("Result: \(response.result)")                         // response serialization result
+
+            if let json = response.result.value {
+                print("JSON: \(json)") // serialized json response
+            }
+            
+            if let data = response.data, let utf8Text = String(data: data, encoding: .utf8) {
+                print("Data: \(utf8Text)") // original server data as UTF8 string
+            }
+        }
+        
     }
     
     
@@ -31,5 +75,8 @@ class ViewController: UIViewController
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+   
+    
+ 
 }
 
