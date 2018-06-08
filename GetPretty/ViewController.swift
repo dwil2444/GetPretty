@@ -25,7 +25,7 @@ class ViewController: UIViewController
         entitySearch(userQuery: text)
     }
     
-    func entitySearch(userQuery: String)
+    func entitySearch(userQuery: String)  // user input as argument
     {
         //Acquire an API key
         let subscriptionKey = "2e5287c6606e4f348d52340d1f52d1de"
@@ -65,12 +65,12 @@ class ViewController: UIViewController
                 /*Pull out places object and then value array*/
                 print("JSON: \(json)") // serialized json response
                 let bingEntObject:Dictionary = json as! Dictionary<String,Any>  // json key is always a string, value could be of any type
-                let placesObject:Dictionary = bingEntObject["places"] as! Dictionary<String,Any>
+                let placesObject:Dictionary = bingEntObject["places"] as! Dictionary<String,Any> // keep deserializing the json keys
                 let valueObject:NSArray = placesObject["value"] as! NSArray
-                var value = valueObject[0]
+                var value = valueObject[0]  // there are 5 results for Durham, I just selected the first one
                 var barberObj:Dictionary = value as! Dictionary<String,Any>
-                let barberShop:String = barberObj["name"] as! String
-                self.output.text = barberShop
+                let barberShop:String = barberObj["name"] as! String  // until we are left with a final json object, we select the string we want
+                self.output.text = barberShop // display the first result to the user.
             }
             if let data = response.data, let _ = String(data: data, encoding: .utf8) {
 //                print("Data: \(utf8Text)") // original server data as UTF8 string
