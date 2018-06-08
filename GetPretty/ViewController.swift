@@ -22,6 +22,7 @@ class ViewController: UIViewController
     {
         output.text = "Hello, " + (input.text)!
         let text: String = (input.text)!   // find out the difference between let and var
+        
         entitySearch(userQuery: text)
     }
     
@@ -36,23 +37,27 @@ class ViewController: UIViewController
         let mkt = "en-Us"
         //var query = "barber shops near me" //query to request from bings entity search
         
-        //Figure out how out how to URL encode the query string
-        //For now hard code encoding the query by replacing spaces with +'s
-        var encodedQuery = "Barbershops+In+" + userQuery // testing a more specific query!
+        let query = "Barbershops In " + userQuery // testing a more specific query!
+        
+        //takes the query and 'encodes' it into a url compatible string
+        let encodeQuery = query.addingPercentEncoding(withAllowedCharacters: NSCharacterSet.urlQueryAllowed)
         
         //Append the encoded string to a string of parameters
-        let params  = "?mkt=" + mkt + "&q=" + encodedQuery
+        let params  = "?mkt=" + mkt + "&q=" + encodeQuery!
         
         //Set up the URL
         let url = URL(string: host+path+params)
-        
-        
-        //Set up the HTTP Connection using Alamofire NOT COMPLETE, ATTACH THE API KEY
+    
+        //Set up the HTTP Connection using Alamofire
+        //
+        //
         
         //Create custom header for authorization
         let headers: HTTPHeaders = [
             "Ocp-Apim-Subscription-Key": subscriptionKey
         ]
+        
+        
         Alamofire.request(url!, method: .get, headers: headers).responseJSON
         {
             response in
