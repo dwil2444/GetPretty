@@ -66,9 +66,11 @@ class ViewController: UIViewController
                 print("JSON: \(json)") // serialized json response
                 let bingEntObject:Dictionary = json as! Dictionary<String,Any>  // json key is always a string, value could be of any type
                 let placesObject:Dictionary = bingEntObject["places"] as! Dictionary<String,Any>
-                let valueObject:Dictionary = placesObject["value"] as! Dictionary<String,Any>
-                let value:String = valueObject["name"] as! String
-                print (value)
+                let valueObject:NSArray = placesObject["value"] as! NSArray
+                var value = valueObject[0]
+                var barberObj:Dictionary = value as! Dictionary<String,Any>
+                let barberShop:String = barberObj["name"] as! String
+                self.output.text = barberShop
             }
             if let data = response.data, let _ = String(data: data, encoding: .utf8) {
 //                print("Data: \(utf8Text)") // original server data as UTF8 string
