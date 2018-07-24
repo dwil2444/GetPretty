@@ -29,7 +29,8 @@ class ViewController: UIViewController
     func entitySearch(userQuery: String)  // user input as argument
     {
         //Acquire an API key
-        let subscriptionKey = "2e5287c6606e4f348d52340d1f52d1de"
+        let subscriptionKey = "0a3d1b921926499a9f1ee8b34e071e24"
+        
         
         let host = "https://api.cognitive.microsoft.com"
         let path = "/bing/v7.0/entities"
