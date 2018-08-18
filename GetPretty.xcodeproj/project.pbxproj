@@ -111,8 +111,8 @@
 		15D1A53420BA22A300884A1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		15D1A53620BA22A300884A1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2AB043720C9A41700E82DD9 /* GetPretty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GetPretty.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B2AB043820C9A41700E82DD9 /* GetPrettyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GetPrettyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B2AB043920C9A41700E82DD9 /* GetPrettyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GetPrettyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2AB043820C9A41700E82DD9 /* GetPrettyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = GetPrettyTests.xctest; path = "/Users/danewilliamson/Desktop/Repos/GetPretty/build/Debug-iphoneos/GetPrettyTests.xctest"; sourceTree = "<absolute>"; };
+		B2AB043920C9A41700E82DD9 /* GetPrettyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = GetPrettyUITests.xctest; path = "/Users/danewilliamson/Desktop/Repos/GetPretty/build/Debug-iphoneos/GetPrettyUITests.xctest"; sourceTree = "<absolute>"; };
 		B2AB043A20C9A6C200E82DD9 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -148,8 +148,6 @@
 				B2AB043A20C9A6C200E82DD9 /* Alamofire.xcodeproj */,
 				15D1A52920BA22A100884A1B /* GetPretty */,
 				B2AB043720C9A41700E82DD9 /* GetPretty.app */,
-				B2AB043820C9A41700E82DD9 /* GetPrettyTests.xctest */,
-				B2AB043920C9A41700E82DD9 /* GetPrettyUITests.xctest */,
 			);
 			sourceTree = "<group>";
 		};
