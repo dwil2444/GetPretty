@@ -18,16 +18,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Let Me Help You Get Pretty!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wtG-ha-cNN">
-                                <rect key="frame" x="0.0" y="118" width="375" height="109"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Tell Me Where You Are" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w04-5H-MtD">
-                                <rect key="frame" x="16" y="284" width="343" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bshop.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="81m-xA-iSA">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Tell Me Where You Are" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w04-5H-MtD">
+                                <rect key="frame" x="16" y="142" width="352" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -35,21 +30,70 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="erv-f6-A63"/>
                                 </connections>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wdD-E5-d0g">
-                                <rect key="frame" x="169" y="366" width="37" height="30"/>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6FL-xb-p9c">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem systemItem="organize" id="QIb-sz-E7Z"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="zjw-4K-fBa"/>
+                                    <barButtonItem style="plain" systemItem="action" id="YFp-Yv-N64"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Gdw-sr-TIm"/>
+                                    <barButtonItem systemItem="refresh" id="cN1-uo-EMR"/>
+                                </items>
+                            </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sg7-lL-hy6">
+                                <rect key="frame" x="23" y="299" width="336" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Enter"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wdD-E5-d0g">
+                                <rect key="frame" x="160" y="218" width="55" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Submit"/>
                                 <connections>
                                     <action selector="action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SiE-RW-eJ4"/>
                                 </connections>
                             </button>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IAm-3K-IHo">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Let Me Help You Get Pretty" id="Yap-TX-NHw">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="search" id="Onu-9i-HUN"/>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="xaW-Ff-ceS"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="IAm-3K-IHo" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="1i7-gO-GT8"/>
+                            <constraint firstItem="6FL-xb-p9c" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="7fu-8b-zKP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="w04-5H-MtD" secondAttribute="trailing" constant="7" id="8Ch-eX-GOC"/>
+                            <constraint firstItem="6FL-xb-p9c" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="DIo-OV-VVq"/>
+                            <constraint firstItem="81m-xA-iSA" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="DfF-Tc-G7c"/>
+                            <constraint firstItem="wdD-E5-d0g" firstAttribute="top" secondItem="w04-5H-MtD" secondAttribute="bottom" constant="46" id="DmW-li-L8P"/>
+                            <constraint firstItem="81m-xA-iSA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Eco-3C-7cZ"/>
+                            <constraint firstItem="IAm-3K-IHo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="GcP-76-GQS"/>
+                            <constraint firstItem="IAm-3K-IHo" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Igg-hd-Af6"/>
+                            <constraint firstItem="IAm-3K-IHo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KGl-1L-0xy"/>
+                            <constraint firstItem="6FL-xb-p9c" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Ml9-Km-MGZ"/>
+                            <constraint firstItem="IAm-3K-IHo" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="SSV-lr-yIL"/>
+                            <constraint firstItem="w04-5H-MtD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="SdX-ud-1hc"/>
+                            <constraint firstItem="IAm-3K-IHo" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="SiN-w2-xUs"/>
+                            <constraint firstItem="81m-xA-iSA" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="U4V-fX-uS5"/>
+                            <constraint firstItem="w04-5H-MtD" firstAttribute="top" secondItem="IAm-3K-IHo" secondAttribute="bottom" constant="78" id="WLM-9t-XoI"/>
+                            <constraint firstItem="81m-xA-iSA" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="dTE-2a-OXf"/>
+                            <constraint firstItem="81m-xA-iSA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="inU-4n-BVS"/>
+                            <constraint firstItem="wdD-E5-d0g" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="160" id="n43-Oy-0df"/>
+                            <constraint firstItem="IAm-3K-IHo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vte-aP-rle"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wdD-E5-d0g" secondAttribute="trailing" constant="160" id="wCm-bf-xtI"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="input" destination="w04-5H-MtD" id="f2J-DJ-cSX"/>
-                        <outlet property="output" destination="wtG-ha-cNN" id="MGA-Vq-XbV"/>
+                        <outlet property="output" destination="Sg7-lL-hy6" id="AdP-io-zdv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -57,4 +101,7 @@
             <point key="canvasLocation" x="5.5999999999999996" y="29.23538230884558"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bshop.jpeg" width="668" height="1002"/>
+    </resources>
 </document>
