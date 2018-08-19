@@ -12,6 +12,7 @@
 		15D1A53020BA22A200884A1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15D1A52E20BA22A200884A1B /* Main.storyboard */; };
 		15D1A53220BA22A300884A1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15D1A53120BA22A300884A1B /* Assets.xcassets */; };
 		15D1A53520BA22A300884A1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15D1A53320BA22A300884A1B /* LaunchScreen.storyboard */; };
+		15E7C43B2128BE0C004D227C /* bshop.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 15E7C4332128BE0C004D227C /* bshop.jpeg */; };
 		B2AB045320C9A82600E82DD9 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2AB044620C9A6C200E82DD9 /* Alamofire.framework */; };
 		B2AB045420C9A82600E82DD9 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B2AB044620C9A6C200E82DD9 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -104,15 +105,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		15579CDF2127D5C700CEB644 /* GetPrettyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GetPrettyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		15579CE02127D5C700CEB644 /* GetPrettyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GetPrettyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		15D1A52A20BA22A200884A1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		15D1A52C20BA22A200884A1B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		15D1A52F20BA22A200884A1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		15D1A53120BA22A300884A1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		15D1A53420BA22A300884A1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		15D1A53620BA22A300884A1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15E7C4332128BE0C004D227C /* bshop.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bshop.jpeg; sourceTree = "<group>"; };
 		B2AB043720C9A41700E82DD9 /* GetPretty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GetPretty.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B2AB043820C9A41700E82DD9 /* GetPrettyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GetPrettyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B2AB043920C9A41700E82DD9 /* GetPrettyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GetPrettyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2AB043A20C9A6C200E82DD9 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -148,14 +150,15 @@
 				B2AB043A20C9A6C200E82DD9 /* Alamofire.xcodeproj */,
 				15D1A52920BA22A100884A1B /* GetPretty */,
 				B2AB043720C9A41700E82DD9 /* GetPretty.app */,
-				B2AB043820C9A41700E82DD9 /* GetPrettyTests.xctest */,
-				B2AB043920C9A41700E82DD9 /* GetPrettyUITests.xctest */,
+				15579CDF2127D5C700CEB644 /* GetPrettyTests.xctest */,
+				15579CE02127D5C700CEB644 /* GetPrettyUITests.xctest */,
 			);
 			sourceTree = "<group>";
 		};
 		15D1A52920BA22A100884A1B /* GetPretty */ = {
 			isa = PBXGroup;
 			children = (
+				15E7C4332128BE0C004D227C /* bshop.jpeg */,
 				15D1A52A20BA22A200884A1B /* AppDelegate.swift */,
 				15D1A52C20BA22A200884A1B /* ViewController.swift */,
 				15D1A52E20BA22A200884A1B /* Main.storyboard */,
@@ -217,7 +220,7 @@
 			);
 			name = GetPrettyTests;
 			productName = GetPrettyTests;
-			productReference = B2AB043820C9A41700E82DD9 /* GetPrettyTests.xctest */;
+			productReference = 15579CDF2127D5C700CEB644 /* GetPrettyTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		15D1A54520BA22A300884A1B /* GetPrettyUITests */ = {
@@ -235,7 +238,7 @@
 			);
 			name = GetPrettyUITests;
 			productName = GetPrettyUITests;
-			productReference = B2AB043920C9A41700E82DD9 /* GetPrettyUITests.xctest */;
+			productReference = 15579CE02127D5C700CEB644 /* GetPrettyUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -346,6 +349,7 @@
 			files = (
 				15D1A53520BA22A300884A1B /* LaunchScreen.storyboard in Resources */,
 				15D1A53220BA22A300884A1B /* Assets.xcassets in Resources */,
+				15E7C43B2128BE0C004D227C /* bshop.jpeg in Resources */,
 				15D1A53020BA22A200884A1B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
