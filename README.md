@@ -9,3 +9,5 @@ based on their specified preferences.
 
 ## License
 **GetPretty** is released under the MIT license. See [LICENSE](https://github.com/dwil2444/GetPretty/blob/master/LICENSE) for details.
+
+![UI Preview](https://image.ibb.co/kPyGiU/Screen_Shot_2018_08_25_at_9_55_21_AM.png)
