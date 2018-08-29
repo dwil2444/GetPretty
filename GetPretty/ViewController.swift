@@ -10,16 +10,24 @@ import UIKit
 import Foundation
 import Alamofire
 
-class ViewController: UIViewController, UITextFieldDelegate
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource
 {
-    @IBOutlet weak var output: UILabel!
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    {
+        return 1
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+    {
+        let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "Cell")
+        cell.textLabel?.text = "Hello World"
+        return cell
+    }
     @IBOutlet weak var input: UITextField!
 
     @IBAction func action(_ sender: UIButton)
     {
-        output.text = "Hello, " + (input.text)!
+//        output.text = "Hello, " + (input.text)!
         let text: String = (input.text)!   // find out the difference between let and var
-        
         entitySearch(userQuery: text)
     }
     func entitySearch(userQuery: String)  // user input as argument
@@ -63,7 +71,7 @@ class ViewController: UIViewController, UITextFieldDelegate
                 //Get Name
                 let barberShop:String = barberObj["name"] as! String  // until we are left with a final json object, we select the string we want
                 //Get location
-                self.output.text = barberShop // display the first result to the user.
+//                self.output.text = barberShop // display the first result to the user.
             }
 //           if let data = response.data, let _ = String(data: data, encoding: .utf8) {
 //                print("Data: \(utf8Text)") // original server data as UTF8 string
