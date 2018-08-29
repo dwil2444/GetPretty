@@ -110,6 +110,7 @@
                     </view>
                     <connections>
                         <outlet property="input" destination="w04-5H-MtD" id="f2J-DJ-cSX"/>
+                        <outlet property="tableView" destination="Vs8-1f-PNy" id="GZP-Og-L8d"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
