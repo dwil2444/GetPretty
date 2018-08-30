@@ -57,6 +57,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 let bingEntObject:Dictionary = json as! Dictionary<String,Any>
                 let placesObject:Dictionary = bingEntObject["places"] as! Dictionary<String,Any>
                 let valueObject:NSArray = placesObject["value"] as! NSArray
+                self.cellContent = []
                 for value in valueObject
                 {
                     var barberObj:Dictionary = value as! Dictionary<String,Any>
