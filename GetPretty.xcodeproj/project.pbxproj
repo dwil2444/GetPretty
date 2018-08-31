@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		158DB3622139AD0300FB27E4 /* launchBackground.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 158DB35A2139AD0200FB27E4 /* launchBackground.jpeg */; };
 		15D1A52B20BA22A200884A1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D1A52A20BA22A200884A1B /* AppDelegate.swift */; };
 		15D1A52D20BA22A200884A1B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D1A52C20BA22A200884A1B /* ViewController.swift */; };
 		15D1A53020BA22A200884A1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15D1A52E20BA22A200884A1B /* Main.storyboard */; };
@@ -107,6 +108,7 @@
 /* Begin PBXFileReference section */
 		157297C32137587B001DCD63 /* GetPrettyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GetPrettyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		157297C42137587B001DCD63 /* GetPrettyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GetPrettyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		158DB35A2139AD0200FB27E4 /* launchBackground.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = launchBackground.jpeg; path = ../../../../Downloads/launchBackground.jpeg; sourceTree = "<group>"; };
 		15D1A52A20BA22A200884A1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		15D1A52C20BA22A200884A1B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		15D1A52F20BA22A200884A1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				15E7C4332128BE0C004D227C /* bshop.jpeg */,
+				158DB35A2139AD0200FB27E4 /* launchBackground.jpeg */,
 				15D1A52A20BA22A200884A1B /* AppDelegate.swift */,
 				15D1A52C20BA22A200884A1B /* ViewController.swift */,
 				15D1A52E20BA22A200884A1B /* Main.storyboard */,
@@ -348,6 +351,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				15D1A53520BA22A300884A1B /* LaunchScreen.storyboard in Resources */,
+				158DB3622139AD0300FB27E4 /* launchBackground.jpeg in Resources */,
 				15D1A53220BA22A300884A1B /* Assets.xcassets in Resources */,
 				15E7C43B2128BE0C004D227C /* bshop.jpeg in Resources */,
 				15D1A53020BA22A200884A1B /* Main.storyboard in Resources */,

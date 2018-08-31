@@ -54,8 +54,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             if let json = response.result.value
             {
                 print("JSON: \(json)")
-                let bingEntObject:Dictionary = json as! Dictionary<String,Any>
-                let placesObject:Dictionary = bingEntObject["places"] as! Dictionary<String,Any>
+                let bingEntObject:Dictionary = json as! Dictionary<String, Any>
+                let placesObject:Dictionary = bingEntObject["places"] as! Dictionary<String, Any>
                 let valueObject:NSArray = placesObject["value"] as! NSArray
                 self.cellContent = []
                 for value in valueObject
