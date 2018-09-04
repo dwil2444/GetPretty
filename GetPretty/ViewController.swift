@@ -24,6 +24,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         cell.textLabel?.text = cellContent[indexPath.row]
         return cell
     }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+    {
+        performSegue(withIdentifier: "toSecondView", sender: nil)
+    }
     @IBOutlet weak var input: UITextField!
 
     @IBAction func action(_ sender: UIButton)

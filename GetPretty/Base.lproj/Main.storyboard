@@ -60,6 +60,9 @@
                                             <rect key="frame" x="0.0" y="0.0" width="343" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="vjg-KA-hy2" kind="show" identifier="toSecondView" id="vJU-6O-DVh"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -116,6 +119,32 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5.5999999999999996" y="29.23538230884558"/>
+        </scene>
+        <!--Cell View Controller-->
+        <scene sceneID="Qzy-B8-swd">
+            <objects>
+                <viewController id="vjg-KA-hy2" customClass="CellViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="b9b-fy-M4J">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bshop.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="vZG-rx-7it">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="vZG-rx-7it" firstAttribute="leading" secondItem="BIc-rV-qiA" secondAttribute="leading" id="M4h-Ff-Ret"/>
+                            <constraint firstItem="vZG-rx-7it" firstAttribute="top" secondItem="b9b-fy-M4J" secondAttribute="top" id="SmD-fj-OEB"/>
+                            <constraint firstItem="vZG-rx-7it" firstAttribute="trailing" secondItem="BIc-rV-qiA" secondAttribute="trailing" id="opD-q6-6kN"/>
+                            <constraint firstItem="vZG-rx-7it" firstAttribute="bottom" secondItem="BIc-rV-qiA" secondAttribute="bottom" id="qO8-ij-h3M"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="BIc-rV-qiA"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7zk-OB-egf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="788" y="31.934032983508249"/>
         </scene>
     </scenes>
     <resources>
